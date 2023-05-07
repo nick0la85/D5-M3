@@ -20,7 +20,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle"href="#">Browsw</a>
+              <a class="nav-link dropdown-toggle"href="#">Browse</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#">Pages</a>
@@ -40,10 +40,31 @@
               <a class="nav-link dropdown-toggle " href="#">Accounts</a>
             </li>
           </ul>
-          <form class="d-flex align-items-center ">
-            <div class="rounded-circle  d-flex align-items-center justify-content-center circle-bell me-2"><i class=" fa fa-light fa-bell fs-5  "></i></div>
-            <img class="rounded-circle " src="assets/avatar-1.jpg" alt="avatar1" width="35px">
-          </form>
+          <form class="d-flex justify-content-end align-items-center ">
+              <div class="rounded-circle  d-flex align-items-center justify-content-center circle-bell me-2"><i class="fa fa-light fa-bell fs-5"></i></div>
+              <div class="dropdown ">
+                <button class="btn" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                 <img class="rounded-circle" src="assets/avatar-1.jpg" alt="" width="35px">
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end px-2" aria-labelledby="dropdownMenu2">
+                  <li>
+                    <button class="dropdown-item" type="button">
+                      <div class="d-flex align-items-center">
+                        <img class="rounded-circle pe-2" src="assets/avatar-1.jpg" alt="" width="40px">
+                        <div class="d-flex flex-column">
+                          <span>Annette Black</span>
+                          <span>email@email.it</span>
+                        </div>
+                      </div>
+                    </button>
+                  </li>
+                  <li><button class="dropdown-item" type="button">Profile</button></li>
+                  <li><button class="dropdown-item" type="button">Subscription</button></li>
+                  <li><button class="dropdown-item" type="button">Settings</button></li>
+                  <li><button class="dropdown-item" type="button">Sign-out</button></li>
+                </ul>
+              </div>
+            </form>
         </div>
       </div>
     </nav>
@@ -52,11 +73,11 @@
     <div class="jumbotron text-light">
       <div class="container">
             <div class="row g-0 ">
-                <div class="col-md-6 col-sm-12 text-center pt-5 ">
+                <div class="col-md-6 col-sm-12  pt-5 ">
                     <h1 class="pt-2">Welcome Web Students</h1>
                     <p class="py-4">Hand-picked Instructor and expertly crafted course, <br> designed for the modern students and enterpreneur</p>
-                    <button  >browse courses</button>
-                    <button >Are you Instructor?</button>
+                    <button class="fw-bold" >BROWSE COURSES</button>
+                    <button class="fw-bold" >ARE YOU INSCRUTOR?</button>
                 </div>
                 <div class="col-md-6 col-sm-12 "><img src="assets/hero-img.png" alt="Hero img"></div>
             </div> 
@@ -110,7 +131,12 @@
             <h5 class="card-title">GraphQL: introduction to graphQL for beginners</h5>  
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item"><i class="fa fa-thin fa-clock me-1"></i> <span class="me-3">2h 40</span> <i class="fa fa-sharp fa-solid fa-signal me1"></i> <span>Advance</span></li>
+            <li class="list-group-item"> 
+              <div class="row">
+                <div class="col-sm-6 col-12"><i class="fa fa-thin fa-clock me-1"></i> <span class="me-3">2h 40</span></div>
+                <div class="col-sm-6 col-12"><i class="fa fa-sharp fa-solid fa-signal me1"></i> <span>Advance</span></div>  
+              </div>
+              </li>
             <li class="list-group-item">
               <i class="fa-solid star fa-star "></i>
               <i class="fa-solid star fa-star"></i>
@@ -138,7 +164,10 @@
               <h5 class="card-title">A Complete Beginner’s Guide to JavaScript</h5>  
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item"><i class="fa fa-thin fa-clock me-1"></i> <span class="me-3">4h 10m</span> <i class="fa fa-sharp fa-solid fa-signal me1"></i> <span>Advance</span></li>
+              <li class="list-group-item"><div class="row">
+                <div class="col-sm-6 col-12"><i class="fa fa-thin fa-clock me-1"></i> <span class="me-3">2h 40</span></div>
+                <div class="col-sm-6 col-12"><i class="fa fa-sharp fa-solid fa-signal me1"></i> <span>Advance</span></div>  
+              </div></li>
               <li class="list-group-item">
                 <i class="fa-solid star fa-star "></i>
                 <i class="fa-solid star fa-star"></i>
